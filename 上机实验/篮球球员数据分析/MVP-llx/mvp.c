@@ -27,6 +27,7 @@
 #include "selectSort.h"
 #include "listAdd.h"
 #include "looklist.h"
+#include "analysis.h"
 
 static short isSorted = 0;
 int main(void)
@@ -44,5 +45,5 @@ int main(void)
 	printf("\t== == == == == == == == ==\n\n");
 
 	
-	return command();;
+	return command();
 }
