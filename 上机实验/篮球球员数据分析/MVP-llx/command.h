@@ -7,6 +7,7 @@ int command(void)
 {
 	struct NODE * playerList = {0};
 	struct NODE * resList = { 0 };
+	struct NODE * analy = { 0 };
 	int cmd;
 	do
 	{
@@ -15,7 +16,7 @@ int command(void)
 		printf( "\n" );
 		printf( "\t" );
 		puts( "0-退出      1-帮助      2-读入数据" ); printf( "\n\t" );
-		puts( "3-查看链表  4-选择排序  " ); 
+		puts( "3-查看链表  4-选择排序  5-统计分析" ); 
 		printf ( "\n\t" );
 		puts ( "== == == == == == == == == == ==" );
 		printf( "\n\n" );
@@ -49,7 +50,9 @@ int command(void)
 					printf( "\n" );
 					break;
 				}
-
+			case 5:
+				analy=analysis( playerList );//查看链表
+				break;
 			default:
 				break;
 		}
