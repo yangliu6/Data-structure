@@ -12,3 +12,4 @@ int diyop( char * );
 void lookList( struct NODE *  );
 int command( void );
 int isChinese( char * );
+struct NODE * analysis( struct NODE * );
